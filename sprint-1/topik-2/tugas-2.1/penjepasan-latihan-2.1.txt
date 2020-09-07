@@ -1,0 +1,44 @@
+PENJELASAN LATIHAN1-2.1
+
+1. var_dump($d + $e);
+int(5)
+tanda (+) yang terdapat diantara $d dan $e berfungsi untuk menambahkan nilai yang berada didalam variabel d dan variabel e
+
+2. var_dump($e == $f);
+bool(true)
+tanda "==" adalah tanda yang jika nilai diantara variabel itu sama maka hasilnya akan benar
+misalkan variabel e yang bernilai '2' dan variabel f yang bernilai 2, hasilnya akan benar walaupun nilai pada variabel e itu diapit oleh tanda kutip satu 
+
+3. var_dump($S === $f);
+bool(false)
+tanda "===" fungsinya hampir sama dengan "==" tetapi jenias kedua variabel harus sama juga
+
+4. var_dump($g);
+NULL
+adalah kondisi netral, kosong atau bisa dibilang hampa 
+
+5. var_dump((bool)$g);
+bool(false)
+yang berarti nilai NULL bukan termasuk jenis boolean
+
+6. var_dump((int)$g);
+int(0)
+adalah yang menjelaskan bahwa nilai NULL adalah bagian dari integer yang bernilai 0
+
+PENJELASAN LATIHAN2-2.1
+
+1. var_dump(true && true);
+tanda && diatas adalah tanda yang dimana kedua kondisi haruslah sama, pada kondisi diatas keduanya memiliki nilai true maka hasilnya pun akan menjadi true
+
+2. var_dump(true && false);
+sama seperti diatas maka nilai dari kedua kondisi diatas haruslah sama, dan jika nilai yang terdapat pada kedua kondisi tersebut berbeda maka hasilnya pun akan false
+
+3. var_dump(true || false);
+tanda || pada operator tersebut tidak mengharuskan kedua kondisi tersebut sama tapi hanya salah satunya saja
+dan apabila kondisi pertama adalah true maka hasil dari operator diatas akan true juga
+
+4. var_dump(false || false);
+sama seperti sebelumnya apabila kondisi pertama adalah false maka hasilnya pun akan false
+
+5. var_dump(!false)
+tanda seru diatas adalah untuk membalikan nilai, misalnya nilai true diberi tanda seru maka true itu akan menjadi false begitu juga sebaliknya
