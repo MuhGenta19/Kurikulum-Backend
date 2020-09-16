@@ -74,7 +74,5 @@ try {
     echo $ex->getMessage();
     echo "\n";
 }
-RumusLuas::calcRectangleArea(4, 8);
-RumusLuas::calcCircleArea(4.5);
-RumusLuas::calcTriangleArea(5, 4);
-RumusLuas::calcTrapesiumArea(4, 10, 5);
+
+?>
