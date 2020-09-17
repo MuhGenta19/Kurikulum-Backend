@@ -34,5 +34,3 @@ class RumusLuas
     }
 }
 
-$kelas = new RumusLuas;
-
