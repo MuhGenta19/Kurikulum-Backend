@@ -3,7 +3,7 @@
 class RumusLuas
 {
     public static function calcRectangleArea($lebar, $panjang) {
-        if ($lebar < 0 || $panjang < 0) {
+        if ($lebar <= 0 || $panjang <= 0) {
             throw new Exception('lebar atau panjang tidak boleh 0 !'."\n");
         }
         $hasil = $lebar*$panjang;
