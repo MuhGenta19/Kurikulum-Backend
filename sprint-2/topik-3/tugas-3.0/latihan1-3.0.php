@@ -12,7 +12,7 @@ class RumusLuas
     }
     
     public static function calcCircleArea($jari2) {
-        if ($jari2 < 0) {
+        if ($jari2 <= 0) {
             throw new Exception('jari-jari tidak boleh 0 !'."\n");
         }
         $hasil = 22/7*($jari2*$jari2);
@@ -21,7 +21,7 @@ class RumusLuas
     }
     
     public static function calcTriangleArea($alas, $tinggi) {
-        if ($alas < 0 || $tinggi < 0) {
+        if ($alas <= 0 || $tinggi <= 0) {
             throw new Exception('alas atau tinggi tidak boleh 0 !'."\n");
         }
         $hasil = 1/2*$alas*$tinggi;
@@ -30,7 +30,7 @@ class RumusLuas
     }
     
     public static function calcTrapesiumArea($sisi1, $sisi2, $tinggi) {
-        if ($sisi1 < 0 || $sisi2 < 0 || $tinggi < 0) {
+        if ($sisi1 <= 0 || $sisi2 <= 0 || $tinggi <= 0) {
             throw new Exception('sisi atau tinggi tidak boleh 0 !'."\n");
         }
         $hasil = 1/2*($sisi1+$sisi2)*$tinggi;
@@ -40,7 +40,7 @@ class RumusLuas
 }
 
 try {
-    RumusLuas::calcRectangleArea(4, -8);
+    RumusLuas::calcRectangleArea(4, 0);
 } catch (Exception $ex) {
     // var_dump($ex);
     echo "Error pada ".$ex->getFile()." baris ke : ". $ex->getLine()."\n";
@@ -49,7 +49,7 @@ try {
 }
 
 try {
-    RumusLuas::calcCircleArea(-4.5);
+    RumusLuas::calcCircleArea(0);
 } catch (Exception $ex) {
     // var_dump($ex);
     echo "Error pada ".$ex->getFile()." baris ke : ". $ex->getLine()."\n";
@@ -58,7 +58,7 @@ try {
 }
 
 try {
-    RumusLuas::calcTriangleArea(5, -4);
+    RumusLuas::calcTriangleArea(5, 0);
 } catch (Exception $ex) {
     // var_dump($ex);
     echo "Error pada ".$ex->getFile()." baris ke : ". $ex->getLine()."\n";
@@ -67,7 +67,7 @@ try {
 }
 
 try {
-    RumusLuas::calcTrapesiumArea(-4, 10, 5);
+    RumusLuas::calcTrapesiumArea(0, 10, 5);
 } catch (Exception $ex) {
     // var_dump($ex);
     echo "Error pada ".$ex->getFile()." baris ke : ". $ex->getLine()."\n";
