@@ -1,0 +1,12 @@
+NORMALISASI DATA
+
+1NF :
+Bentuk 1NF atau First Normal Form mensyaratkan beberapa kondisi dalam sebuah database. Fungsinya adalah untuk menghilangkan duplikasi kolom dari tabel yang sama, membuat tabel terpisah untuk masing-masing kelompok data terkait dan mengidentifikasi setiap baris dengan primary key.
+
+2NF :
+Diantara fungsi normalisasi 2NF adalah untuk menghapus beberapa subset data yang ada pada tabel dan menempatkan mereka pada tabel terpisah, menciptakan hubungan antara tabel baru dan tabel lama dengan menciptakan foreign key dan menghilangkan ketergantungan atribut dalam tabel dengan kandidat key tersebut.
+Syarat untuk menerapkan normalisasi 2NF adalah data telah dibentuk dalam 1NF.
+
+3NF :
+Normalisasi database dalam bentuk 3NF bertujuan untuk menghilangkan seluruh atribut atau field yang tidak berhubungan dengan primary key. Dengan demikian tidak ada ketergantungan transitif pada setiap kandidat key.
+Bentuk 3NF mempunyai syarat, setiap relasi tidak mempunyai atribut yang bergantung transitif, harus bergantung penuh pada kunci utama dan harus memenuhi bentuk normal 2NF.
