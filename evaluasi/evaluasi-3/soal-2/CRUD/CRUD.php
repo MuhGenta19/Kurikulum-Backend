@@ -85,6 +85,7 @@ $kondisi = true;
         $menu = trim(fgets(STDIN));
 
         $class = new ConnectPDO();
+        $class->getData();
         switch ($menu) {
             case 1:
                 $class->insertData();
@@ -103,3 +104,5 @@ $kondisi = true;
                 break;
         }
     }
+
+?>
