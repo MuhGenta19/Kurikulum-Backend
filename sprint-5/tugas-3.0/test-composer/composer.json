@@ -1,0 +1,16 @@
+{
+    "name": "mgenta/mgenta",
+    "description": "latihan autoloader pada composer",
+    "authors": [
+        {
+            "name": "MuhGenta19",
+            "email": "muhammadgentaalam@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hitungan\\": "class/"
+        }
+    }
+}
