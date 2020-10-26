@@ -27,7 +27,7 @@
                 <form action="{{ route('post.comment.store', $post) }}" method="post" class="form-horizontal">
                         <div class="form-group">
                             @csrf
-                            <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Enter your comments here..."></textarea>
+                            <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Enter your comment here..."></textarea>
                         </div>
 
                             <input type="submit" value="Send" class="btn btn-primary">

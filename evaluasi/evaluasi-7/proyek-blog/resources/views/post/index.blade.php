@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="card-body">
-                        <p>{{ substr($post->content, 0, 100) }}</p>
+                        <p>{{ substr($post->content, 0, 200) }}...</p>
                     </div>
                 </div>
                 @endforeach
