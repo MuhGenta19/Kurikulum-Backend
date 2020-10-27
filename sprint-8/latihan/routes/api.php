@@ -20,7 +20,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', 'UserController@register');
 Route::post('login', 'UserController@login');
-Route::get('book', 'BookController@book');
+// Route::get('book', 'BookController@book');
 
-Route::get('bookall', 'BookController@bookAuth')->middleware('jwt.verify');
+// Route::get('bookall', 'BookController@bookAuth')->middleware('jwt.verify');
 Route::get('user', 'UserController@getAuthenticatedUser')->middleware('jwt.verify');
+
+
+route::group(['middleware' => ['jwt.verify']], function() {
+
+Route::get('/film', 'FilmController@index');
+Route::post('/film', 'FilmController@store');
+Route::get('/film/{id}', 'FilmController@show');
+Route::patch('/film/{id}', 'FilmController@update');
+Route::delete('/film/{id}', 'FilmController@destroy');
+
+});
+
+
